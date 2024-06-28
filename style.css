@@ -191,9 +191,15 @@ body {
     padding: 1rem;
     border: none;
     background: var(--Dark-gray-blue);
+
+    
     color: var(--White);
     font-weight: var(--fw-medium);
     border-radius: 20px;
+}
+
+.btn:hover {
+    background: linear-gradient(to bottom, var(--Light-slate-blue) , var(--Light-royal-blue));
 }
 
 @media (min-width: 700px) {
