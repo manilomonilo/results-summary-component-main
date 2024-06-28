@@ -1,0 +1,215 @@
+@font-face {
+    font-family: "Hanken";
+    src: url(assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+:root {
+
+    --Light-red: hsl(0, 100%, 67%);
+    --Orangey-yellow: hsl(39, 100%, 56%);
+    --Green-teal: hsl(166, 100%, 37%);
+    --Cobalt-blue: hsl(234, 85%, 45%);
+
+    --Light-red-tr: hsla(0, 100%, 67%, .08);
+    --Orangey-yellow-tr: hsla(39, 100%, 56%, .08);
+    --Green-teal-tr: hsla(166, 100%, 37%, .08);
+    --Cobalt-blue-tr: hsla(234, 85%, 45%, .08);
+
+    --Light-slate-blue: hsl(252, 100%, 67%);
+    --Light-royal-blue: hsl(241, 81%, 54%);
+
+    --Violet-blue: hsla(256, 72%, 46%, 1);
+    --Persian-blue: hsla(241, 72%, 46%, 0);
+
+    --White: hsl(0, 0%, 100%);
+    --Pale-blue: hsl(221, 100%, 96%);
+    --Light-lavender: hsl(241, 100%, 89%);
+    --Dark-gray-blue: hsl(224, 30%, 27%);
+
+    --fw-bold: 800;
+    --fw-medium: 700;
+    --fw-regular: 500;
+
+    --Line-height: 1.5;
+    --Font-size: 18px;
+    --h1: 3.2rem;
+    --h2: 1.1rem;
+    --h3: 2rem;
+
+}
+
+body {
+    background-color: var(--White);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    line-height: var(--Line-height);
+    font-family: Hanken, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: .6rem;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 1.6rem;
+    padding: 2rem;
+    text-align: center;
+    width: 350px;
+    height: 430px;
+}
+
+.your-result-section {
+    /* problem with gradient color */
+    background: linear-gradient(to bottom, var(--Light-slate-blue), var(--Light-royal-blue));
+    color: var(--White);
+}
+
+.your-result {
+    font-weight: var(--fw-regular);
+    font-size: var(--h2);
+    opacity: .7;
+    margin-bottom: 1rem;
+}
+
+.circle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    /* problem with the gradient color */
+    background: linear-gradient(to bottom, var(--Violet-blue) 40%, var(--Persian-blue));
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+}
+
+.circle-76 {
+    font-size: var(--h1);
+}
+
+.circle-of-100 {
+    font-size: .75rem;
+    opacity: .65;
+}
+
+.great {
+    font-size: var(--h3);
+    font-weight: var(--fw-medium);
+    margin-bottom: .5rem;
+}
+
+.great-parg {
+    width: 230px;
+    color: var(--Light-lavender);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.summary-section {
+    background-color: var(--White);
+    box-shadow: 1px 1px 10px #DDD;
+
+}
+
+.summary {
+    align-self: flex-start;
+    font-size: 1.2rem;
+    font-weight: var(--fw-medium);
+}
+
+.data-sec {
+    display: flex;
+    justify-content: space-between;
+    background-color: #EEE;
+    border-radius: 5px;
+    width: 95%;
+    padding: 1rem;
+}
+
+.icon-and-name {
+    display: flex;
+    gap: .6rem;
+}
+
+.reaction {
+    color: var(--Light-red);
+    font-weight: var(--fw-medium);
+}
+
+.data-reaction {
+    background-color: var(--Light-red-tr);
+}
+
+.memory {
+    color: var(--Orangey-yellow);
+    font-weight: var(--fw-medium);
+}
+
+.data-memory {
+    background-color: var(--Orangey-yellow-tr);
+}
+
+.verbal {
+    color: var(--Green-teal);
+    font-weight: var(--fw-medium);
+}
+
+.data-verbal {
+    background-color: var(--Green-teal-tr);
+}
+
+.visual {
+    color: var(--Cobalt-blue);
+    font-weight: var(--fw-medium);
+}
+
+.data-visual {
+    background-color: var(--Cobalt-blue-tr);
+}
+
+.btn {
+    width: 95%;
+    padding: 1rem;
+    border: none;
+    background: var(--Dark-gray-blue);
+    color: var(--White);
+    font-weight: var(--fw-medium);
+    border-radius: 20px;
+}
+
+@media (min-width: 700px) {
+    body {
+        height: 100vh;
+    }
+}
+
+@media (max-width: 709px) {
+    .section {
+        width: 100vw;
+        transform: translateY(-20px);
+    }
+}
