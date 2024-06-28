@@ -91,7 +91,6 @@ body {
     font-weight: var(--fw-regular);
     font-size: var(--h2);
     opacity: .7;
-    margin-bottom: 1rem;
 }
 
 .circle {
@@ -102,9 +101,8 @@ body {
     width: 150px;
     height: 150px;
     /* problem with the gradient color */
-    background: linear-gradient(to bottom, var(--Violet-blue) 40%, var(--Persian-blue));
+    background: linear-gradient(to bottom, var(--Violet-blue), var(--Persian-blue));
     border-radius: 50%;
-    margin-bottom: 1.5rem;
 }
 
 .circle-76 {
@@ -119,14 +117,11 @@ body {
 .great {
     font-size: var(--h3);
     font-weight: var(--fw-medium);
-    margin-bottom: .5rem;
 }
 
 .great-parg {
     width: 230px;
     color: var(--Light-lavender);
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .summary-section {
